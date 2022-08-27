@@ -1,0 +1,1096 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5a76d2c20b1e64488eff1ae5b491d7, type: 3}
+  m_Name: DATA_ENEMY
+  m_EditorClassIdentifier: 
+  Icon: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+  enemies:
+  - ICON: {fileID: 21300000, guid: 7ccb07bf468328e4382ed6954f0fd4a1, type: 3}
+    Type: 0
+    Damage: 2
+    HP: 5
+    Rarity: 1
+    EnocunterATK: 2
+    EncounterHP: 5
+    CatchChance: 99
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: 5f1f6bff411908e4e99d7e68c089552f, type: 3}
+    Type: 1
+    Damage: 5
+    HP: 5
+    Rarity: 1
+    EnocunterATK: 5
+    EncounterHP: 5
+    CatchChance: 80
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: 7d0f6b1ff81740844a8278ccd61fca20, type: 3}
+    Type: 2
+    Damage: 1
+    HP: 7
+    Rarity: 1
+    EnocunterATK: 1
+    EncounterHP: 7
+    CatchChance: 99
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: c1b0c9dd5769776439d8b4abd0e32b60, type: 3}
+    Type: 3
+    Damage: 5
+    HP: 9
+    Rarity: 1
+    EnocunterATK: 5
+    EncounterHP: 9
+    CatchChance: 99
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 4
+    Damage: 4
+    HP: 10
+    Rarity: 1
+    EnocunterATK: 4
+    EncounterHP: 10
+    CatchChance: 99
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 5
+    Damage: 1
+    HP: 10
+    Rarity: 1
+    EnocunterATK: 1
+    EncounterHP: 10
+    CatchChance: 80
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 6
+    Damage: 5
+    HP: 10
+    Rarity: 1
+    EnocunterATK: 5
+    EncounterHP: 10
+    CatchChance: 80
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 7
+    Damage: 1
+    HP: 10
+    Rarity: 1
+    EnocunterATK: 1
+    EncounterHP: 10
+    CatchChance: 80
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 8
+    Damage: 5
+    HP: 11
+    Rarity: 1
+    EnocunterATK: 5
+    EncounterHP: 11
+    CatchChance: 80
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 9
+    Damage: 3
+    HP: 15
+    Rarity: 1
+    EnocunterATK: 3
+    EncounterHP: 15
+    CatchChance: 80
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 10
+    Damage: 1
+    HP: 100
+    Rarity: 1
+    EnocunterATK: 1
+    EncounterHP: 100
+    CatchChance: 10
+    CombineCost: 2
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 11
+    Damage: 10
+    HP: 10
+    Rarity: 2
+    EnocunterATK: 10
+    EncounterHP: 10
+    CatchChance: 70
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 12
+    Damage: 9
+    HP: 15
+    Rarity: 2
+    EnocunterATK: 9
+    EncounterHP: 15
+    CatchChance: 80
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 13
+    Damage: 10
+    HP: 15
+    Rarity: 2
+    EnocunterATK: 10
+    EncounterHP: 15
+    CatchChance: 80
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 14
+    Damage: 8
+    HP: 20
+    Rarity: 2
+    EnocunterATK: 8
+    EncounterHP: 20
+    CatchChance: 70
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 15
+    Damage: 8
+    HP: 20
+    Rarity: 2
+    EnocunterATK: 8
+    EncounterHP: 20
+    CatchChance: 70
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 16
+    Damage: 5
+    HP: 20
+    Rarity: 2
+    EnocunterATK: 5
+    EncounterHP: 20
+    CatchChance: 70
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 17
+    Damage: 10
+    HP: 25
+    Rarity: 2
+    EnocunterATK: 10
+    EncounterHP: 25
+    CatchChance: 70
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 18
+    Damage: 3
+    HP: 30
+    Rarity: 2
+    EnocunterATK: 3
+    EncounterHP: 30
+    CatchChance: 70
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 19
+    Damage: 5
+    HP: 30
+    Rarity: 2
+    EnocunterATK: 5
+    EncounterHP: 30
+    CatchChance: 70
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 20
+    Damage: 3
+    HP: 35
+    Rarity: 2
+    EnocunterATK: 3
+    EncounterHP: 35
+    CatchChance: 70
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 21
+    Damage: 5
+    HP: 40
+    Rarity: 2
+    EnocunterATK: 5
+    EncounterHP: 40
+    CatchChance: 65
+    CombineCost: 8
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 22
+    Damage: 8
+    HP: 30
+    Rarity: 3
+    EnocunterATK: 8
+    EncounterHP: 30
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 23
+    Damage: 12
+    HP: 30
+    Rarity: 3
+    EnocunterATK: 12
+    EncounterHP: 30
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 24
+    Damage: 10
+    HP: 30
+    Rarity: 3
+    EnocunterATK: 10
+    EncounterHP: 30
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 25
+    Damage: 10
+    HP: 35
+    Rarity: 3
+    EnocunterATK: 10
+    EncounterHP: 35
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 26
+    Damage: 10
+    HP: 35
+    Rarity: 3
+    EnocunterATK: 10
+    EncounterHP: 35
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 27
+    Damage: 15
+    HP: 40
+    Rarity: 3
+    EnocunterATK: 15
+    EncounterHP: 40
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 28
+    Damage: 15
+    HP: 40
+    Rarity: 3
+    EnocunterATK: 15
+    EncounterHP: 40
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 29
+    Damage: 12
+    HP: 40
+    Rarity: 3
+    EnocunterATK: 12
+    EncounterHP: 40
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 30
+    Damage: 15
+    HP: 45
+    Rarity: 3
+    EnocunterATK: 15
+    EncounterHP: 45
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 31
+    Damage: 10
+    HP: 45
+    Rarity: 3
+    EnocunterATK: 10
+    EncounterHP: 45
+    CatchChance: 70
+    CombineCost: 15
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 32
+    Damage: 10
+    HP: 50
+    Rarity: 3
+    EnocunterATK: 2
+    EncounterHP: 80
+    CatchChance: 10
+    CombineCost: 0
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 33
+    Damage: 20
+    HP: 45
+    Rarity: 4
+    EnocunterATK: 20
+    EncounterHP: 45
+    CatchChance: 55
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 34
+    Damage: 15
+    HP: 50
+    Rarity: 4
+    EnocunterATK: 15
+    EncounterHP: 50
+    CatchChance: 55
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 35
+    Damage: 25
+    HP: 50
+    Rarity: 4
+    EnocunterATK: 25
+    EncounterHP: 50
+    CatchChance: 55
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 36
+    Damage: 25
+    HP: 50
+    Rarity: 4
+    EnocunterATK: 25
+    EncounterHP: 50
+    CatchChance: 50
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 37
+    Damage: 15
+    HP: 55
+    Rarity: 4
+    EnocunterATK: 15
+    EncounterHP: 55
+    CatchChance: 55
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 38
+    Damage: 25
+    HP: 55
+    Rarity: 4
+    EnocunterATK: 25
+    EncounterHP: 55
+    CatchChance: 55
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 39
+    Damage: 20
+    HP: 55
+    Rarity: 4
+    EnocunterATK: 20
+    EncounterHP: 55
+    CatchChance: 50
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 40
+    Damage: 25
+    HP: 55
+    Rarity: 4
+    EnocunterATK: 25
+    EncounterHP: 55
+    CatchChance: 50
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 41
+    Damage: 30
+    HP: 65
+    Rarity: 4
+    EnocunterATK: 8
+    EncounterHP: 180
+    CatchChance: 10
+    CombineCost: 0
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 42
+    Damage: 20
+    HP: 75
+    Rarity: 4
+    EnocunterATK: 20
+    EncounterHP: 75
+    CatchChance: 50
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 43
+    Damage: 15
+    HP: 85
+    Rarity: 4
+    EnocunterATK: 15
+    EncounterHP: 85
+    CatchChance: 50
+    CombineCost: 30
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 44
+    Damage: 45
+    HP: 65
+    Rarity: 5
+    EnocunterATK: 45
+    EncounterHP: 65
+    CatchChance: 50
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 45
+    Damage: 30
+    HP: 65
+    Rarity: 5
+    EnocunterATK: 30
+    EncounterHP: 65
+    CatchChance: 50
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 46
+    Damage: 35
+    HP: 75
+    Rarity: 5
+    EnocunterATK: 35
+    EncounterHP: 75
+    CatchChance: 35
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 47
+    Damage: 40
+    HP: 75
+    Rarity: 5
+    EnocunterATK: 40
+    EncounterHP: 75
+    CatchChance: 55
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 48
+    Damage: 35
+    HP: 75
+    Rarity: 5
+    EnocunterATK: 35
+    EncounterHP: 75
+    CatchChance: 55
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 49
+    Damage: 35
+    HP: 75
+    Rarity: 5
+    EnocunterATK: 35
+    EncounterHP: 75
+    CatchChance: 50
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 50
+    Damage: 35
+    HP: 80
+    Rarity: 5
+    EnocunterATK: 35
+    EncounterHP: 80
+    CatchChance: 35
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 51
+    Damage: 30
+    HP: 85
+    Rarity: 5
+    EnocunterATK: 30
+    EncounterHP: 85
+    CatchChance: 0
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 52
+    Damage: 30
+    HP: 90
+    Rarity: 5
+    EnocunterATK: 30
+    EncounterHP: 90
+    CatchChance: 45
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 53
+    Damage: 50
+    HP: 100
+    Rarity: 5
+    EnocunterATK: 25
+    EncounterHP: 400
+    CatchChance: 10
+    CombineCost: 0
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 54
+    Damage: 25
+    HP: 115
+    Rarity: 5
+    EnocunterATK: 25
+    EncounterHP: 115
+    CatchChance: 0
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 55
+    Damage: 25
+    HP: 115
+    Rarity: 5
+    EnocunterATK: 25
+    EncounterHP: 115
+    CatchChance: 55
+    CombineCost: 65
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 56
+    Damage: 55
+    HP: 100
+    Rarity: 6
+    EnocunterATK: 55
+    EncounterHP: 100
+    CatchChance: 40
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 57
+    Damage: 60
+    HP: 100
+    Rarity: 6
+    EnocunterATK: 60
+    EncounterHP: 100
+    CatchChance: 35
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 58
+    Damage: 60
+    HP: 100
+    Rarity: 6
+    EnocunterATK: 60
+    EncounterHP: 100
+    CatchChance: 35
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 59
+    Damage: 50
+    HP: 105
+    Rarity: 6
+    EnocunterATK: 50
+    EncounterHP: 105
+    CatchChance: 45
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 60
+    Damage: 55
+    HP: 110
+    Rarity: 6
+    EnocunterATK: 55
+    EncounterHP: 110
+    CatchChance: 0
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 61
+    Damage: 50
+    HP: 120
+    Rarity: 6
+    EnocunterATK: 50
+    EncounterHP: 120
+    CatchChance: 45
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 62
+    Damage: 65
+    HP: 125
+    Rarity: 6
+    EnocunterATK: 65
+    EncounterHP: 125
+    CatchChance: 0
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 63
+    Damage: 55
+    HP: 125
+    Rarity: 6
+    EnocunterATK: 55
+    EncounterHP: 125
+    CatchChance: 35
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 64
+    Damage: 45
+    HP: 130
+    Rarity: 6
+    EnocunterATK: 45
+    EncounterHP: 130
+    CatchChance: 35
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 65
+    Damage: 45
+    HP: 145
+    Rarity: 6
+    EnocunterATK: 45
+    EncounterHP: 145
+    CatchChance: 0
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 66
+    Damage: 50
+    HP: 145
+    Rarity: 6
+    EnocunterATK: 50
+    EncounterHP: 145
+    CatchChance: 35
+    CombineCost: 100
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 67
+    Damage: 65
+    HP: 145
+    Rarity: 6
+    EnocunterATK: 45
+    EncounterHP: 666
+    CatchChance: 10
+    CombineCost: 0
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 68
+    Damage: 65
+    HP: 110
+    Rarity: 7
+    EnocunterATK: 65
+    EncounterHP: 110
+    CatchChance: 25
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 69
+    Damage: 75
+    HP: 115
+    Rarity: 7
+    EnocunterATK: 75
+    EncounterHP: 115
+    CatchChance: 25
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 70
+    Damage: 80
+    HP: 145
+    Rarity: 7
+    EnocunterATK: 80
+    EncounterHP: 145
+    CatchChance: 30
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 71
+    Damage: 100
+    HP: 150
+    Rarity: 7
+    EnocunterATK: 100
+    EncounterHP: 150
+    CatchChance: 0
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 72
+    Damage: 65
+    HP: 165
+    Rarity: 7
+    EnocunterATK: 65
+    EncounterHP: 165
+    CatchChance: 0
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 73
+    Damage: 110
+    HP: 170
+    Rarity: 7
+    EnocunterATK: 110
+    EncounterHP: 170
+    CatchChance: 35
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 74
+    Damage: 120
+    HP: 170
+    Rarity: 7
+    EnocunterATK: 120
+    EncounterHP: 170
+    CatchChance: 0
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 75
+    Damage: 90
+    HP: 180
+    Rarity: 7
+    EnocunterATK: 90
+    EncounterHP: 180
+    CatchChance: 25
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 76
+    Damage: 80
+    HP: 180
+    Rarity: 7
+    EnocunterATK: 80
+    EncounterHP: 180
+    CatchChance: 30
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 77
+    Damage: 80
+    HP: 200
+    Rarity: 7
+    EnocunterATK: 80
+    EncounterHP: 200
+    CatchChance: 0
+    CombineCost: 200
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 78
+    Damage: 100
+    HP: 200
+    Rarity: 7
+    EnocunterATK: 55
+    EncounterHP: 1000
+    CatchChance: 10
+    CombineCost: 0
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 79
+    Damage: 125
+    HP: 165
+    Rarity: 8
+    EnocunterATK: 125
+    EncounterHP: 165
+    CatchChance: 25
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 80
+    Damage: 130
+    HP: 180
+    Rarity: 8
+    EnocunterATK: 130
+    EncounterHP: 180
+    CatchChance: 0
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 81
+    Damage: 160
+    HP: 200
+    Rarity: 8
+    EnocunterATK: 160
+    EncounterHP: 200
+    CatchChance: 30
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 82
+    Damage: 100
+    HP: 200
+    Rarity: 8
+    EnocunterATK: 100
+    EncounterHP: 200
+    CatchChance: 0
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 83
+    Damage: 175
+    HP: 200
+    Rarity: 8
+    EnocunterATK: 175
+    EncounterHP: 200
+    CatchChance: 40
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 84
+    Damage: 170
+    HP: 200
+    Rarity: 8
+    EnocunterATK: 170
+    EncounterHP: 200
+    CatchChance: 50
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 85
+    Damage: 190
+    HP: 205
+    Rarity: 8
+    EnocunterATK: 190
+    EncounterHP: 205
+    CatchChance: 35
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 86
+    Damage: 120
+    HP: 205
+    Rarity: 8
+    EnocunterATK: 120
+    EncounterHP: 205
+    CatchChance: 30
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 87
+    Damage: 200
+    HP: 210
+    Rarity: 8
+    EnocunterATK: 200
+    EncounterHP: 210
+    CatchChance: 0
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 88
+    Damage: 165
+    HP: 220
+    Rarity: 8
+    EnocunterATK: 165
+    EncounterHP: 220
+    CatchChance: 25
+    CombineCost: 300
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 89
+    Damage: 200
+    HP: 220
+    Rarity: 8
+    EnocunterATK: 70
+    EncounterHP: 1600
+    CatchChance: 10
+    CombineCost: 0
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 90
+    Damage: 210
+    HP: 205
+    Rarity: 9
+    EnocunterATK: 210
+    EncounterHP: 205
+    CatchChance: 0
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 91
+    Damage: 190
+    HP: 215
+    Rarity: 9
+    EnocunterATK: 190
+    EncounterHP: 215
+    CatchChance: 25
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 92
+    Damage: 205
+    HP: 220
+    Rarity: 9
+    EnocunterATK: 205
+    EncounterHP: 220
+    CatchChance: 25
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 93
+    Damage: 200
+    HP: 230
+    Rarity: 9
+    EnocunterATK: 200
+    EncounterHP: 230
+    CatchChance: 0
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 94
+    Damage: 195
+    HP: 250
+    Rarity: 9
+    EnocunterATK: 195
+    EncounterHP: 250
+    CatchChance: 0
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 95
+    Damage: 190
+    HP: 280
+    Rarity: 9
+    EnocunterATK: 190
+    EncounterHP: 280
+    CatchChance: 45
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 96
+    Damage: 210
+    HP: 300
+    Rarity: 9
+    EnocunterATK: 210
+    EncounterHP: 300
+    CatchChance: 25
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 97
+    Damage: 200
+    HP: 300
+    Rarity: 9
+    EnocunterATK: 200
+    EncounterHP: 300
+    CatchChance: 0
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 98
+    Damage: 200
+    HP: 300
+    Rarity: 9
+    EnocunterATK: 200
+    EncounterHP: 300
+    CatchChance: 30
+    CombineCost: 500
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 99
+    Damage: 230
+    HP: 330
+    Rarity: 9
+    EnocunterATK: 90
+    EncounterHP: 2400
+    CatchChance: 10
+    CombineCost: 0
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 100
+    Damage: 255
+    HP: 320
+    Rarity: 10
+    EnocunterATK: 255
+    EncounterHP: 320
+    CatchChance: 35
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 101
+    Damage: 260
+    HP: 320
+    Rarity: 10
+    EnocunterATK: 260
+    EncounterHP: 320
+    CatchChance: 35
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 102
+    Damage: 275
+    HP: 330
+    Rarity: 10
+    EnocunterATK: 275
+    EncounterHP: 330
+    CatchChance: 25
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 103
+    Damage: 250
+    HP: 330
+    Rarity: 10
+    EnocunterATK: 250
+    EncounterHP: 330
+    CatchChance: 30
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 104
+    Damage: 320
+    HP: 335
+    Rarity: 10
+    EnocunterATK: 320
+    EncounterHP: 335
+    CatchChance: 0
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 105
+    Damage: 295
+    HP: 350
+    Rarity: 10
+    EnocunterATK: 295
+    EncounterHP: 350
+    CatchChance: 0
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 106
+    Damage: 265
+    HP: 365
+    Rarity: 10
+    EnocunterATK: 265
+    EncounterHP: 365
+    CatchChance: 25
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 107
+    Damage: 300
+    HP: 375
+    Rarity: 10
+    EnocunterATK: 300
+    EncounterHP: 375
+    CatchChance: 0
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 108
+    Damage: 320
+    HP: 380
+    Rarity: 10
+    EnocunterATK: 320
+    EncounterHP: 380
+    CatchChance: 30
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 109
+    Damage: 300
+    HP: 380
+    Rarity: 10
+    EnocunterATK: 300
+    EncounterHP: 380
+    CatchChance: 0
+    CombineCost: 750
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 110
+    Damage: 330
+    HP: 390
+    Rarity: 10
+    EnocunterATK: 120
+    EncounterHP: 3600
+    CatchChance: 10
+    CombineCost: 0
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 111
+    Damage: 350
+    HP: 400
+    Rarity: 11
+    EnocunterATK: 125
+    EncounterHP: 4200
+    CatchChance: 10
+    CombineCost: 1000
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 112
+    Damage: 330
+    HP: 400
+    Rarity: 11
+    EnocunterATK: 120
+    EncounterHP: 3800
+    CatchChance: 10
+    CombineCost: 1000
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 113
+    Damage: 365
+    HP: 420
+    Rarity: 11
+    EnocunterATK: 160
+    EncounterHP: 4000
+    CatchChance: 10
+    CombineCost: 1000
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 114
+    Damage: 320
+    HP: 440
+    Rarity: 11
+    EnocunterATK: 130
+    EncounterHP: 4000
+    CatchChance: 10
+    CombineCost: 1000
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 115
+    Damage: 400
+    HP: 450
+    Rarity: 11
+    EnocunterATK: 150
+    EncounterHP: 5500
+    CatchChance: 10
+    CombineCost: 1000
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 116
+    Damage: 320
+    HP: 500
+    Rarity: 11
+    EnocunterATK: 100
+    EncounterHP: 6500
+    CatchChance: 10
+    CombineCost: 1000
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 117
+    Damage: 390
+    HP: 550
+    Rarity: 11
+    EnocunterATK: 120
+    EncounterHP: 6600
+    CatchChance: 10
+    CombineCost: 1000
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 118
+    Damage: 400
+    HP: 600
+    Rarity: 11
+    EnocunterATK: 120
+    EncounterHP: 7000
+    CatchChance: 10
+    CombineCost: 1000
+  - ICON: {fileID: 21300000, guid: d0b26c4eaa446a6488f46594b7abcead, type: 3}
+    Type: 119
+    Damage: 440
+    HP: 600
+    Rarity: 11
+    EnocunterATK: 180
+    EncounterHP: 7400
+    CatchChance: 5
+    CombineCost: 0

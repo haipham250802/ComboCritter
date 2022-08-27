@@ -117,7 +117,8 @@ public class UI_Team : MonoBehaviour
         if (index == 1)
         {
             if (Item1Render == null) return;
-
+            
+        
             Destroy(Item1Render);
             DEL_SLOT1.gameObject.SetActive(false);
             Slot1.gameObject.transform.SetAsLastSibling();
